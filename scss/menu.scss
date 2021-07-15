@@ -1,0 +1,139 @@
+@media only screen and (max-width: 768px) {
+
+    .menu__contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .menu__delivery {
+            margin-top: 70px;
+            margin-bottom: 80px;
+            background-color: $colorPrimario;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 50px 20px 50px;
+        }
+
+        .menu__principales {
+            width: 80%;
+            text-align: center;
+            border-bottom: solid 1px $colorPrimario;
+            color: $colorPrimario;
+
+            h2 {
+                font-size: 40px;
+            }
+            
+        }
+
+        .menu__grilla {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            width: 60%;
+            column-gap: 80px;
+            margin-bottom: 100px;
+
+            .menu__platos {
+                height: 30vh;
+                margin-top: 50px;
+                border-bottom: solid 1px $colorBordes;
+                
+                h3 {
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .menu__grilla2 {
+            @extend .menu__grilla;
+        }
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .menu__contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .menu__delivery {
+            margin-top: 70px;
+            margin-bottom: 80px;
+            background-color: $colorPrimario;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 50px 20px 50px;
+        }
+
+        .menu__principales {
+            width: 80%;
+            text-align: center;
+            border-bottom: solid 1px $colorPrimario;
+            color: $colorPrimario ;
+
+            h2 {
+                font-size: 40px;
+            }
+        }
+
+        .menu__grilla {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 80%;
+            column-gap: 80px;
+            margin-bottom: 100px;
+
+            .menu__platos {
+                height: 30vh;
+                margin-top: 50px;
+                border-bottom: solid 1px $colorBordes;
+                
+                h3 {
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+                
+            }
+        } 
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .menu__contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .menu__grilla {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: 80%;
+            column-gap: 80px;
+            margin-bottom: 100px;
+
+            .menu__platos {
+                height: 30vh;
+                margin-top: 50px;
+                border-bottom: solid 1px $colorBordes;
+                
+                h3 {
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+            }
+        }
+    } 
+}

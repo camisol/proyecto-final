@@ -1,0 +1,118 @@
+@import "_colores.scss";
+
+@import "nav.scss";
+@import "footer.scss";
+@import "index.scss";
+@import "nosotros.scss";
+@import "menu.scss";
+@import "comollegar.scss";
+@import "contacto.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $colorFondo;
+    font-family: 'Jost', sans-serif;
+    font-size: 22px;
+    color: rgb(109, 107, 107);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $colorLetra;
+}
+
+a:hover {
+    color: $colorPrimario;
+    
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+.botonIndex {
+    color: $colorPrimario;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+}
+
+.botonIndex:hover {
+    background-color: $colorPrimario;
+    color: white;
+    transition: 0.5s;
+}
+
+.bannerTitulo {
+    background-image: url(../multimedia/titulos.png);
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        background-color: $colorFondo;
+        padding: 50px 60px 50px 60px;
+        font-size: 30px;
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
