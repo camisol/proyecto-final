@@ -1,0 +1,967 @@
+@import "_colores.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $colorFondo;
+    font-family: 'Jost', sans-serif;
+    font-size: 22px;
+    color: rgb(109, 107, 107);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $colorLetra;
+}
+
+a:hover {
+    color: $colorPrimario;
+    
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+.botonIndex {
+    color: $colorPrimario;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+}
+
+.botonIndex:hover {
+    background-color: $colorPrimario;
+    color: white;
+    transition: 0.5s;
+}
+
+.bannerTitulo {
+    background-image: url(../multimedia/titulos.png);
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        background-color: $colorFondo;
+        padding: 50px 60px 50px 60px;
+        font-size: 30px;
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+footer {
+    background-color: $colorPrimario;
+    color: white;
+
+    a {
+        color: white;
+    }
+
+    a:hover {
+        color: $colorHover;
+    }
+}
+
+
+
+/* ----------- INICIO RESPONSIVE PAGINA "MENU" MEDIA QUERIES  ---------- */
+
+
+@media only screen and (max-width: 768px) {
+
+
+    /* --------------INICIO NAV PAGINA MENU MAX-WIDTH 768 PX ----------*/
+
+    @mixin size($ancho , $alto ) {
+        width: $ancho;
+        height: $alto;
+    }
+
+    .nav {
+        @include size(100% , 65vh);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .nav__logoredes{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin-top: 30px;
+
+            .nav__redes {
+                display: flex;
+                justify-content: flex-end;
+
+                i {
+                    margin-left: 15px;
+                    font-size: 20px;
+                }
+            }
+
+            .nav__logo {
+                display: flex;
+                justify-content: center;
+                align-content: flex-start;
+                font-size: 65px;
+                letter-spacing: 5px;
+                height: 100px;
+            }
+        }
+
+        .nav__items {
+            @include size (100%, fit-content);
+            height: fit-content ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: solid 1px $colorBordes;
+            
+            .nav__lista {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                @include size(fit-content, fit-content);
+                font-size: 25px;
+            }
+        }
+    }
+
+    /* --------------FIN NAV PAGINA MENU MAX-WIDTH 768 PX ----------*/
+
+
+
+
+    /* --------------INICIO CONTENIDO PAGINA MENU MAX-WIDTH 768 PX ----------*/
+
+    .menu__contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .menu__delivery {
+            margin-top: 70px;
+            margin-bottom: 80px;
+            background-color: $colorPrimario;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 50px 20px 50px;
+        }
+
+        .menu__principales {
+            width: 80%;
+            text-align: center;
+            border-bottom: solid 1px $colorPrimario;
+            color: $colorPrimario;
+
+            h2 {
+                font-size: 40px;
+            }
+            
+        }
+
+        .menu__grilla {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            width: 60%;
+            column-gap: 80px;
+            margin-bottom: 100px;
+
+            .menu__platos {
+                height: 30vh;
+                margin-top: 50px;
+                border-bottom: solid 1px $colorBordes;
+                
+                h3 {
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .menu__grilla2 {
+            @extend .menu__grilla;
+        }
+    }
+
+
+    /* --------------FIN CONTENIDO PAGINA MENU MAX-WIDTH 768 PX ----------*/
+
+
+
+
+
+    /* --------------INICIO FOOTER PAGINA MENU MAX-WIDTH 768 PX ----------*/
+
+
+    footer {
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    
+        .footer__contenido {
+            font-size: 19px;
+            display: flex;
+            flex-direction: column;
+            width: 55%;
+            height: 60%;
+            justify-content: space-between;
+            align-items: center;
+        
+            .footer__form {
+                width: 100%;
+            
+                .footer__input {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    border: none;
+                }
+
+                .footer__submit {
+                    width: 100%;
+                    border: none;
+                    background-color: white;
+                    color: rgb(109, 107, 107) ;
+                }
+
+                .footer__submit:hover {
+                    background-color: $colorHover;
+                    color: white;
+                    transition: 0.3s;
+                }
+            }
+
+            .footer__redes {
+                justify-content: space-evenly;
+                font-size: 22px;
+                width: 100%;
+            }
+        }
+    }
+
+    /* --------------FIN FOOTER PAGINA MENU MAX-WIDTH 768 PX ----------*/
+}  
+
+
+
+
+/* --------------FIN MEDIA MAX-WIDTH 768 PX ----------*/
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+    /* --------------INICIO NAV PAGINA MENU MIN-WIDTH 768 PX ----------*/
+
+    .nav {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .nav__logoredes{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            margin-top: 30px;
+
+            .nav__redes {
+                display: flex;
+                justify-content: flex-end;
+
+                i {
+                    margin-left: 15px;
+                    font-size: 20px;
+                }
+            }
+
+            .nav__logo {
+                display: flex;
+                justify-content: center;
+                align-content: flex-start;
+                font-size: 65px;
+                letter-spacing: 5px;
+                height: 100px;
+            }
+        }
+
+        .nav__items {
+            width: 100% ;
+            height: 60px ;
+            display: flex;
+            justify-content: center;
+            border-top: solid 1px $colorBordes;
+            
+            .nav__lista {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 70%;
+                height: 60px;
+                font-size: 22px;
+                
+            }
+        }
+    }
+
+    /* --------------FIN NAV PAGINA MENU MIN-WIDTH 768 PX ----------*/
+
+
+
+    /* --------------INICIO CONTENIDO PAGINA MENU MIN-WIDTH 768 PX ----------*/
+
+    .menu__contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .menu__delivery {
+            margin-top: 70px;
+            margin-bottom: 80px;
+            background-color: $colorPrimario;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 50px 20px 50px;
+        }
+
+        .menu__principales {
+            width: 80%;
+            text-align: center;
+            border-bottom: solid 1px $colorPrimario;
+            color: $colorPrimario ;
+
+            h2 {
+                font-size: 40px;
+            }
+        }
+
+        .menu__grilla {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 80%;
+            column-gap: 80px;
+            margin-bottom: 100px;
+
+            .menu__platos {
+                height: 30vh;
+                margin-top: 50px;
+                border-bottom: solid 1px $colorBordes;
+                
+                h3 {
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+                
+            }
+        } 
+    }
+
+    /* --------------FIN CONTENIDO PAGINA MENU MIN-WIDTH 768 PX ----------*/
+
+
+
+    /* --------------INICIO FOOTER PAGINA MENU MIN-WIDTH 768 PX ----------*/
+
+    footer {
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    
+        .footer__contenido {
+            font-size: 19px;
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            height: 80%;
+            justify-content: space-between;
+            align-items: center;
+        
+            .footer__form {
+                width: 50%;
+            
+                .footer__input {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    border: none;
+                }
+
+                .footer__submit {
+                    width: 100%;
+                    border: none;
+                    background-color: white;
+                    color: rgb(109, 107, 107) ;
+                }
+
+                .footer__submit:hover {
+                    background-color: $colorHover;
+                    color: white;
+                    transition: 0.3s;
+                }
+            }
+
+            .footer__redes {
+                justify-content: space-evenly;
+                font-size: 22px;
+                width: 30%;
+            }
+        }
+    }  
+    
+    /* --------------FIN FOOTER PAGINA MENU MIN-WIDTH 768 PX ----------*/
+
+} 
+
+
+
+/* --------------FIN MEDIA MIN-WIDTH 768 PX ----------*/
+
+
+
+
+
+@media only screen and (min-width: 992px) {
+
+    
+    /*---------------INICIO NAV MIN-WIDTH 992 PX-----------------*/
+
+    .nav {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .nav__logoredes{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin-top: 30px;
+
+            .nav__redes {
+                display: flex;
+                justify-content: flex-end;
+
+                i {
+                    margin-left: 15px;
+                    font-size: 20px;
+                }
+            }
+
+            .nav__logo {
+                display: flex;
+                justify-content: center;
+                align-content: flex-start;
+                font-size: 65px;
+                letter-spacing: 5px;
+                height: 100px;
+            }
+        }
+
+        .nav__items {
+            width: 100% ;
+            height: 60px ;
+            display: flex;
+            justify-content: center;
+            border-top: solid 1px $colorBordes;
+            
+
+            .nav__lista {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 60%;
+                height: 60px;
+                font-size: 22px;
+                
+            }
+        }
+    }
+
+
+    /*---------------FIN NAV MIN-WIDTH 992 PX-----------------*/
+
+
+    /*---------INICIO SECCIONES INDEX (5) MIN-WIDTH 992 PX ----------*/
+    
+
+    .seccion1 {
+        display: flex;
+        background-image: url(../multimedia/index13.png);
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+
+        .seccion1__titulo {
+            margin-bottom: -100px;
+            margin-left: 120px;
+            color: $colorPrimario;
+
+            .seccion1__titulo1 {
+                font-size: 90px;
+                
+            }
+        }
+    }
+
+    .seccion2 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+
+        .seccion2__contenido {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 80%;
+
+            .seccion2__texto {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 40%;
+
+                .seccion2__parrafo {
+                    height: 30%;
+
+                    p {
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    .seccion3 {
+        @extend .seccion2;
+
+        
+
+        .seccion3__contenido {
+            @extend .seccion2__contenido;
+
+            .seccion3__texto {
+                @extend .seccion2__texto;
+
+                .seccion3__parrafo {
+                    @extend .seccion2__parrafo;
+
+                    p {
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+        }
+   }
+
+    .seccion4 {
+        @extend .seccion2;
+
+        .seccion4__contenido {
+            background-image: url(../multimedia/seccion4fondo.png) ;
+            background-size: cover;
+            height: 100%;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .seccion4__texto {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: $colorFondo;
+                width: 40%;
+                height: 20%;
+
+                h2 {
+                    font-size: 25px;
+                }
+
+                a {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .seccion4b {
+        display: flex;
+        justify-content: center;
+        height: 40vh ;
+        margin-top: 90px;
+
+        p {
+            width: 30%;
+            font-size: 30px ;
+            font-weight: bold;
+            text-align: center;
+            color: $colorPrimario;
+        }
+    }
+
+    .seccion5 {
+        display: flex;
+        justify-content: center;
+
+        .seccion5__contenido {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin-top: 50px;
+            margin-bottom: 80px;
+        
+            .carousel {
+                height: 100%;
+
+                .carousel-item img {
+                    height: 100%;
+                    width: 100%;
+                }
+        
+                .carousel-control-prev-icon {
+                    margin-left: -200px;
+                    background-color: $colorPrimario;
+                }
+        
+                .carousel-control-next-icon {
+                    margin-right: -200px;
+                    background-color: $colorPrimario;
+                }
+            }
+        }
+    }
+
+
+    /*---------------FIN SECCIONES INDEX (5) MIN-WIDTH 992 PX -----------------*/
+
+
+
+    /*---------------INICIO FOOTER MIN-WIDTH 992 PX -----------------*/
+    
+
+    
+    footer {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorPrimario;
+    color: white;
+
+        .footer__contenido {
+            font-size: 19px;
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            height: 80%;
+            justify-content: space-between;
+            align-items: center;
+            
+        
+            .footer__form {
+                width: 40%;
+            
+                .footer__input {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    border: none;
+                }
+
+                .footer__submit {
+                    width: 100%;
+                    border: none;
+                    background-color: white;
+                    color: rgb(109, 107, 107) ;
+                }
+
+                .footer__submit:hover {
+                    background-color: $colorHover;
+                    color: rgb(250, 250, 249);
+                    transition: 0.3s;
+                }
+            }
+
+            .footer__redes {
+                justify-content: space-evenly;
+                font-size: 22px;
+                width: 30%;
+            }
+        }
+    }
+
+    /*---------------FIN FOOTER MIN-WIDTH 992 PX -----------------*/
+
+
+
+
+    /*-----------INICIO PAGINA "NOSOTROS" MIN-WIDTH 992 PX ----------*/
+    
+
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+        .nosotros__contenido {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 70%;
+            margin-top: 70px;
+            margin-bottom: 80px;
+
+            h2 {
+                font-size: 40px;
+            }
+
+            h3 {
+                font-size: 40px;
+                font-weight: bold;
+            }
+            
+            .nosotros__p {
+            
+                font-weight: bold;
+                font-size: 30px;
+                text-align: center;
+                color: $colorPrimario;
+            }
+
+            .nosotros__menu {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 70px;
+                
+                .nosotros__menuTexto {
+                    width: 35%;
+                    text-align: right;
+                }
+
+                .nosotros__menuImagen img {
+                    height: 300px;
+                    border-radius: 500px;
+                }
+            }
+
+            .nosotros__calidad {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 70px;
+
+                .nosotros__calidadTexto {
+                    width: 35%;
+                }
+
+                .nosotros__calidadImagen img {
+                    height: 300px;
+                    border-radius: 500px;
+                }
+            }
+
+            .nosotros__ambiente {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 50px;
+                margin-bottom: 70px;
+
+                .nosotros__ambienteTexto {
+                    width: 35%;
+                    text-align: right;
+                }
+
+                .nosotros__ambienteImagen img {
+                    height: 300px;
+                    border-radius: 500px;
+                }
+            }
+        }
+    }
+
+    /*-----------FIN PAGINA "NOSOTROS" MIN-WIDTH 992 PX ----------*/
+
+
+
+
+    /*-----------INICIO PAGINA "COMO LLEGAR" MIN-WIDTH 992 PX ----------*/
+    
+
+
+
+    .llegar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+        .llegar__contenido {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            justify-content: space-between;
+            margin-top: 80px;
+            margin-bottom: 80px;
+            
+            .llegar__texto {
+                width: 40%;
+                
+                .llegar__listaTitulo {
+                    margin-bottom: 50px;
+                }
+
+                i {
+                    margin-right: 15px;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+
+    /*-----------FIN PAGINA "COMO LLEGAR" MIN-WIDTH 992 PX ----------*/
+
+
+
+
+
+    /*-----------INICIO PAGINA "CONTACTO" MIN-WIDTH 992 PX ----------*/
+
+    
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .contacto__contenido {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 90%;
+            margin-top: 70px;
+            margin-bottom: 80px;
+        
+            .contacto__form {
+                width: 50%;
+
+                p {
+                    margin-bottom: 50px;
+                }
+
+                .formButton {
+                    width: 300px;
+                    border: solid 1px $colorBordes;
+                    background-color: white;
+                    color: rgb(109, 107, 107);
+                    margin-bottom: 10px;
+                }
+
+                .formButton:hover {
+                    background-color: $colorPrimario;
+                    color: white;
+                    transition: 0.3s;
+                }
+            }
+        
+            .contacto__imagen img {
+                width: 500px;
+            }
+        }
+    }
+
+
+    /*-----------FIN PAGINA "CONTACTO" MIN-WIDTH 992 PX ----------*/
+
+
+
+    /*-----------INICIO PAGINA "MENU" MIN-WIDTH 992 PX ----------*/
+
+
+    .menu__contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .menu__grilla {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: 80%;
+            column-gap: 80px;
+            margin-bottom: 100px;
+
+            .menu__platos {
+                height: 30vh;
+                margin-top: 50px;
+                border-bottom: solid 1px $colorBordes;
+                
+                h3 {
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+            }
+        }
+    } 
+
+    /*-----------FIN PAGINA "MENU" MIN-WIDTH 992 PX ----------*/
+    
+} 
+
+
+
+/* ------------------ FIN MEDIA MIN-WIDTH 992 PX -----------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
