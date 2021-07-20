@@ -16,7 +16,7 @@
 body {
     background-color: $colorFondo;
     font-family: 'Jost', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     color: rgb(109, 107, 107);
 }
 
@@ -35,7 +35,7 @@ a:hover {
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
 }
 
@@ -54,7 +54,7 @@ h2 {
 
 .bannerTitulo {
     background-image: url(../multimedia/titulos.png);
-    height: 60vh;
+    height: 70vh;
     width: 100%;
     display: flex;
     justify-content: center;
