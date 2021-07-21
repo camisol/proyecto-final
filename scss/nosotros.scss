@@ -1,3 +1,244 @@
+@media only screen and (max-width: 768px) {
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .bannerTitulo {
+            height: 100vh;
+        }
+        
+        .nosotros__contenido {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-top: 70px;
+            margin-bottom: 80px;
+
+            h2 {
+                font-size: 40px;
+            }
+            h3 {
+                font-size: 40px;
+                font-weight: bold;
+            }
+            
+            .nosotros__p {
+            
+                font-weight: bold;
+                font-size: 25px;
+                width: 70%;
+                color: $colorPrimario;
+                margin-top: 30px;
+                
+            }
+
+            .nosotros__items {
+                display: flex;
+                flex-direction: column;
+                margin-top: 80px;
+                margin-bottom: 80px ;
+               
+
+                .nosotros__menu {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 50px;
+                    
+                    
+                    .nosotros__menuTexto {
+                        display: flex;
+                        flex-direction: column;
+                        width: 60%;
+                        margin-top: 50px;
+                        align-items: center;
+                        text-align: center;
+                    }
+
+                    .nosotros__menuImagen img {
+                        height: 300px;
+                        border-radius: 500px;
+                    }
+                }
+
+                .nosotros__calidad {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 50px;
+                    
+
+                    .nosotros__calidadTexto {
+                        display: flex;
+                        flex-direction: column;
+                        width: 60%;
+                        margin-top: 50px;
+                        align-items: center;
+                        text-align: center;
+                    }
+
+                    .nosotros__calidadImagen img {
+                        height: 300px;
+                        border-radius: 500px;
+                    }
+                }
+
+                .nosotros__ambiente {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    align-items: center;
+                    
+
+                    .nosotros__ambienteTexto {
+                        display: flex;
+                        flex-direction: column;
+                        width: 60%;
+                        margin-top: 50px;
+                        align-items: center;
+                        text-align: center;
+                    }
+
+                    .nosotros__ambienteImagen img {
+                        height: 300px;
+                        border-radius: 500px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+}
+
+@media only screen and (min-width: 768px) {
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .bannerTitulo {
+            height: 100vh;
+        }
+        
+        .nosotros__contenido {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-top: 70px;
+            margin-bottom: 80px;
+
+            h2 {
+                font-size: 40px;
+            }
+            h3 {
+                font-size: 40px;
+                font-weight: bold;
+            }
+            
+            .nosotros__p {
+            
+                font-weight: bold;
+                font-size: 28px;
+                width: 50%;
+                color: $colorPrimario;
+                margin-top: 30px;
+            }
+
+            .nosotros__items {
+                display: flex;
+                flex-direction: column;
+                margin-top: 80px;
+                margin-bottom: 80px ;
+               
+
+                .nosotros__menu {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 50px;
+                    
+                    
+                    .nosotros__menuTexto {
+                        display: flex;
+                        flex-direction: column;
+                        width: 50%;
+                        
+                        margin-top: 50px;
+                        align-items: center;
+                        text-align: center;
+                    }
+
+                    .nosotros__menuImagen img {
+                        height: 300px;
+                        border-radius: 500px;
+                    }
+                }
+
+                .nosotros__calidad {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 50px;
+                    
+
+                    .nosotros__calidadTexto {
+                        display: flex;
+                        flex-direction: column;
+                        width: 50%;
+                        
+                        margin-top: 50px;
+                        align-items: center;
+                        text-align: center;
+                    }
+
+                    .nosotros__calidadImagen img {
+                        height: 300px;
+                        border-radius: 500px;
+                    }
+                }
+
+                .nosotros__ambiente {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    align-items: center;
+                    
+
+                    .nosotros__ambienteTexto {
+                        display: flex;
+                        flex-direction: column;
+                        width: 50%;
+                       
+                        margin-top: 50px;
+                        align-items: center;
+                        text-align: center;
+                    }
+
+                    .nosotros__ambienteImagen img {
+                        height: 300px;
+                        border-radius: 500px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
 @media only screen and (min-width: 992px) {
 
     .nosotros {
@@ -5,6 +246,10 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
+
+        .bannerTitulo {
+            height: 60vh;
+        }
         
         .nosotros__contenido {
             display: flex;
@@ -29,13 +274,17 @@
                 font-size: 27px;
                 width: 50%;
                 color: $colorPrimario;
+                
             }
 
             .nosotros__items {
                 display: flex;
-                flex: row wrap ;
-                margin-top: 80px;
+                flex-direction: row;
+                margin-top: 70px;
                 margin-bottom: 80px ;
+                width: 100%;
+                height: 100vh;
+
                
 
                 .nosotros__menu {
@@ -49,7 +298,6 @@
                         display: flex;
                         flex-direction: column;
                         width: 60%;
-                        height: 200px;
                         margin-top: 45px;
                         align-items: center;
                     }
@@ -66,12 +314,13 @@
                     justify-content: center;
                     align-items: center;
                     
+                    
 
                     .nosotros__calidadTexto {
                         display: flex;
                         flex-direction: column;
                         width: 60%;
-                        height: 200px;
+                        
                         margin-top: 45px;
                         align-items: center;
                     }
@@ -87,16 +336,16 @@
                     flex-direction: column-reverse;
                     justify-content: center;
                     align-items: center;
+                    margin-bottom: 50px;
+                    
+                    
 
                     .nosotros__ambienteTexto {
                         display: flex;
                         flex-direction: column;
                         width: 60%;
-                        height: 200px;
                         margin-top: 45px;
                         align-items: center;
-                        
-                        
                     }
 
                     .nosotros__ambienteImagen img {
@@ -108,3 +357,4 @@
         }
     }
 }
+

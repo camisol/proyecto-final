@@ -75,7 +75,7 @@
                     <a class="botonIndex" href="paginas/menu.html">Menú ></a>
                 </div>
             </div>
-            <div class="seccion3__imagen">
+            <div class="seccion2b__imagen">
                 <img src="multimedia/home2.png" alt="café-medialuna" height="700px">
             </div> 
         </div>   
@@ -102,53 +102,32 @@
     </section>
 
     <section class="seccion5">
+        <h3 class="seccion5__titulo"> --------------  HACE TU RESERVA  --------------</h3>
+        <form class="seccion5__form">
+            
+            <label for="fecha"></label>
+            <input  class="seccion5input" type="date" id="fecha" name="fecha" min="2021-7-1">
 
-        <!---------- Carousel bootstrap---------->
-        <div class="seccion5__contenido">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+            <select class="seccion5input" name="horario" id="horario">
+                <option disabled selected>Horario</option>
+                <option value="volvo">21:00</option>
+                <option value="saab">21:30</option>
+                <option value="mercedes">22:00</option>
+                <option value="audi">22:30</option>
+            </select>
 
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>numero 1</h5>
-                            <p>nksd jknejrnbfegsjkhfnlksml</p>
-                          </div>
-                         
-                        <!--<img src="multimedia/carousel1.png" class="d-block w-100" alt="brunch">-->
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>numero2</h5>
-                            <p>nksd jknejrnbfegsjkhfnlksml</p>
-                          </div>
-                        <!--<img src="multimedia/carousel2.png" class="d-block w-100" alt="café">-->
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>numero3</h5>
-                            <p>nksd jknejrnbfegsjkhfnlksml</p>
-                          </div>
-                        <!--<img src="multimedia/carousel4.png" class="d-block w-100" alt="ensalada">-->
-                    </div>
-                    
+            <select class="seccion5input" name="personas" id="personas">
+                <option disabled selected>Personas</option>
+                <option value="volvo">1</option>
+                <option value="saab">2</option>
+                <option value="mercedes">3</option>
+                <option value="audi">4</option>
+            </select>
+
+            <input class="seccion5input formButton" type="submit">
+            
+        </form>
                 
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-          <!--------- fin carousel bootstrap----------->
     </section>
 
     <section class="seccion6">
