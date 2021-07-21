@@ -10,7 +10,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 70%;
+            width: 100%;
             margin-top: 70px;
             margin-bottom: 80px;
 
@@ -26,65 +26,85 @@
             .nosotros__p {
             
                 font-weight: bold;
-                font-size: 30px;
-                text-align: center;
+                font-size: 27px;
+                width: 50%;
                 color: $colorPrimario;
             }
 
-            .nosotros__menu {
+            .nosotros__items {
                 display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: center;
-                margin-top: 70px;
-                
-                .nosotros__menuTexto {
-                    width: 35%;
-                    text-align: right;
+                flex: row wrap ;
+                margin-top: 80px;
+                margin-bottom: 80px ;
+               
+
+                .nosotros__menu {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    
+                    .nosotros__menuTexto {
+                        display: flex;
+                        flex-direction: column;
+                        width: 60%;
+                        height: 200px;
+                        margin-top: 45px;
+                        align-items: center;
+                    }
+
+                    .nosotros__menuImagen img {
+                        height: 300px;
+                        border-radius: 500px;
+                    }
                 }
 
-                .nosotros__menuImagen img {
-                    height: 300px;
-                    border-radius: 500px;
-                }
-            }
+                .nosotros__calidad {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    
 
-            .nosotros__calidad {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: center;
-                margin-top: 100px;
+                    .nosotros__calidadTexto {
+                        display: flex;
+                        flex-direction: column;
+                        width: 60%;
+                        height: 200px;
+                        margin-top: 45px;
+                        align-items: center;
+                    }
 
-                .nosotros__calidadTexto {
-                    width: 35%;
-                }
-
-                .nosotros__calidadImagen img {
-                    height: 300px;
-                    border-radius: 500px;
-                }
-            }
-
-            .nosotros__ambiente {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: center;
-                margin-top: 50px;
-                margin-bottom: 100px;
-
-                .nosotros__ambienteTexto {
-                    width: 35%;
-                    text-align: right;
+                    .nosotros__calidadImagen img {
+                        height: 300px;
+                        border-radius: 500px;
+                    }
                 }
 
-                .nosotros__ambienteImagen img {
-                    height: 300px;
-                    border-radius: 500px;
+                .nosotros__ambiente {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    align-items: center;
+
+                    .nosotros__ambienteTexto {
+                        display: flex;
+                        flex-direction: column;
+                        width: 60%;
+                        height: 200px;
+                        margin-top: 45px;
+                        align-items: center;
+                        
+                        
+                    }
+
+                    .nosotros__ambienteImagen img {
+                        height: 300px;
+                        border-radius: 500px;
+                    }
                 }
             }
         }
     }
-
 }

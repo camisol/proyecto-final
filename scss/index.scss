@@ -87,8 +87,8 @@
             grid-template-rows: repeat(3, 60vh);;
             grid-template-areas: 
             "seccion2__imagen seccion2__texto"
-            "seccion2__imagen seccion3__imagen"
-            "seccion3__texto seccion3__imagen";
+            "seccion2__imagen seccion2b__imagen"
+            "seccion2b__texto seccion2b__imagen";
             column-gap: 2%;
             width: 80%;
             
@@ -114,19 +114,19 @@
                 }
             }
 
-            .seccion3__texto {
-                grid-area: seccion3__texto;
+            .seccion2b__texto {
+                grid-area: seccion2b__texto;
                 @extend .seccion2__texto;
             }
 
-            .seccion3__imagen {
+            .seccion2b__imagen {
                 @extend .seccion2__imagen;
-                grid-area: seccion3__imagen;
+                grid-area: seccion2b__imagen;
             }
         }
 }    
 
-    .seccion4 {
+    .seccion3 {
         width: 100%;
         height: 100vh;
         display: flex;
@@ -134,7 +134,7 @@
         align-items: center;
         margin-top: 50px;
 
-        .seccion4__contenido {
+        .seccion3__contenido {
             background-image: url(../multimedia/seccion4fondo.png) ;
             background-size: cover;
             height: 100%;
@@ -143,7 +143,7 @@
             justify-content: center;
             align-items: center;
 
-            .seccion4__texto {
+            .seccion3__texto {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -154,13 +154,49 @@
 
                 h2 {
                     font-size: 25px;
+                   
                 }
 
                 a {
-                    font-size: 18px;
+                    font-size: 22px;
                 }
             }
         }
+    }
+
+    .seccion4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .seccion4__contenido {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            color: $colorPrimario;
+            margin-top: 50px;
+            
+            .seccion4__titulo {
+                font-size: 30px;
+            }
+
+            .seccion4__redes{
+                display: flex;
+                flex: row wrap;
+                width: 50%;
+                justify-content: space-between;
+
+                a {
+                    color: $colorPrimario;
+                    font-size: 40px;
+                }
+                a:hover {
+                    color: $colorHover;
+                }
+            }
+        }   
     }
 
 
@@ -188,6 +224,11 @@
 
                     .carousel-caption {
                         margin-bottom: 250px;
+                        
+                    }
+
+                    .carousel-caption-color {
+                        color: red;
                     }
                 }
 
