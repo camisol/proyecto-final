@@ -27,11 +27,9 @@ ul {
 a {
     text-decoration: none;
     color: $colorLetra;
-}
-
-a:hover {
-    color: $colorPrimario;
-    
+    &:hover {
+        color: $colorPrimario;
+    }
 }
 
 h2 {
@@ -45,12 +43,12 @@ h2 {
     font-weight: bold;
     font-size: 22px;
     padding: 5px 10px 5px 10px;
-}
 
-.botonIndex:hover {
+    &:hover {
     background-color: $colorPrimario;
     color: white;
     transition: 0.5s;
+    }
 }
 
 .bannerTitulo {
@@ -68,7 +66,6 @@ h2 {
         text-align: justify;
         align-items: center;
         justify-content: center;
-        
     }
 }
 

@@ -4,11 +4,9 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-
         .bannerTitulo {
             height: 100vh;
         }
-        
         .nosotros__contenido {
             display: flex;
             flex-direction: column;
@@ -26,7 +24,6 @@
             }
             
             .nosotros__p {
-            
                 font-weight: bold;
                 font-size: 25px;
                 width: 70%;
@@ -40,16 +37,12 @@
                 flex-direction: column;
                 margin-top: 80px;
                 margin-bottom: 80px ;
-               
-
                 .nosotros__menu {
                     display: flex;
                     flex-direction: column-reverse;
                     justify-content: center;
                     align-items: center;
                     margin-bottom: 50px;
-                    
-                    
                     .nosotros__menuTexto {
                         display: flex;
                         flex-direction: column;
@@ -71,8 +64,6 @@
                     justify-content: center;
                     align-items: center;
                     margin-bottom: 50px;
-                    
-
                     .nosotros__calidadTexto {
                         display: flex;
                         flex-direction: column;
@@ -93,8 +84,6 @@
                     flex-direction: column-reverse;
                     justify-content: center;
                     align-items: center;
-                    
-
                     .nosotros__ambienteTexto {
                         display: flex;
                         flex-direction: column;
@@ -112,11 +101,9 @@
             }
         }
     }
-
-
-
-
 }
+
+
 
 @media only screen and (min-width: 768px) {
     .nosotros {
@@ -124,7 +111,6 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-
         .bannerTitulo {
             height: 100vh;
         }
@@ -159,16 +145,12 @@
                 flex-direction: column;
                 margin-top: 80px;
                 margin-bottom: 80px ;
-               
-
                 .nosotros__menu {
                     display: flex;
                     flex-direction: column-reverse;
                     justify-content: center;
                     align-items: center;
                     margin-bottom: 50px;
-                    
-                    
                     .nosotros__menuTexto {
                         display: flex;
                         flex-direction: column;
@@ -191,13 +173,10 @@
                     justify-content: center;
                     align-items: center;
                     margin-bottom: 50px;
-                    
-
                     .nosotros__calidadTexto {
                         display: flex;
                         flex-direction: column;
                         width: 50%;
-                        
                         margin-top: 50px;
                         align-items: center;
                         text-align: center;
@@ -214,13 +193,10 @@
                     flex-direction: column-reverse;
                     justify-content: center;
                     align-items: center;
-                    
-
                     .nosotros__ambienteTexto {
                         display: flex;
                         flex-direction: column;
                         width: 50%;
-                       
                         margin-top: 50px;
                         align-items: center;
                         text-align: center;
@@ -234,8 +210,8 @@
             }
         }
     }
-
 }
+
 
 
 
@@ -246,7 +222,6 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-
         .bannerTitulo {
             height: 60vh;
         }
@@ -284,16 +259,11 @@
                 margin-bottom: 80px ;
                 width: 100%;
                 height: 100vh;
-
-               
-
                 .nosotros__menu {
                     display: flex;
                     flex-direction: column-reverse;
                     justify-content: center;
                     align-items: center;
-                    
-                    
                     .nosotros__menuTexto {
                         display: flex;
                         flex-direction: column;
@@ -313,9 +283,6 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    
-                    
-
                     .nosotros__calidadTexto {
                         display: flex;
                         flex-direction: column;
@@ -337,9 +304,6 @@
                     justify-content: center;
                     align-items: center;
                     margin-bottom: 50px;
-                    
-                    
-
                     .nosotros__ambienteTexto {
                         display: flex;
                         flex-direction: column;

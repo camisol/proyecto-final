@@ -1,35 +1,40 @@
 footer {
     background-color: $colorPrimario;
     color: white;
-
     a {
         color: white;
+        &:hover {
+            color: $colorHover;
+        }
     }
 
-    a:hover {
-        color: $colorHover;
+    .footer__submit {
+        width: 100%;
+        height: 35px;
+        border: none;
+        background-color: white;
+        color: rgb(109, 107, 107) ;
+
+        &:hover {
+            background-color: $colorHover;
+            color: white;
+            transition: 0.3s;
+        }
     }
 }
 
 @media only screen and (max-width: 768px) {
 
-
     footer {
+        @include flex;
         height: 80vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    
         .footer__contenido {
+            @include flex;
+            justify-content: space-between;
             font-size: 19px;
-            display: flex;
             flex-direction: column;
             width: 55%;
             height: 60%;
-            justify-content: space-between;
-            align-items: center;
-        
             .footer__form {
                 width: 100%;
             
@@ -39,22 +44,7 @@ footer {
                     margin-bottom: 20px;
                     border: none;
                 }
-
-                .footer__submit {
-                    width: 100%;
-                    height: 35px;
-                    border: none;
-                    background-color: white;
-                    color: rgb(109, 107, 107) ;
-                }
-
-                .footer__submit:hover {
-                    background-color: $colorHover;
-                    color: white;
-                    transition: 0.3s;
-                }
             }
-
             .footer__redes {
                 justify-content: space-evenly;
                 font-size: 22px;
@@ -67,46 +57,24 @@ footer {
 @media only screen and (min-width: 768px) {
 
     footer {
+        @include flex;
         height: 60vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       
-    
         .footer__contenido {
+            @include flex;
+            justify-content: space-between;
             font-size: 19px;
-            display: flex;
             flex-direction: row;
             width: 80%;
             height: 80%;
-            justify-content: space-between;
-            align-items: center;
-        
             .footer__form {
                 width: 50%;
-            
                 .footer__input {
                     width: 100%;
                     height: 35px;
                     margin-bottom: 20px;
                     border: none;
                 }
-
-                .footer__submit {
-                    width: 100%;
-                    height: 35px;
-                    border: none;
-                    background-color: white;
-                    color: rgb(109, 107, 107) ;
-                }
-
-                .footer__submit:hover {
-                    background-color: $colorHover;
-                    color: white;
-                    transition: 0.3s;
-                }
             }
-
             .footer__redes {
                 justify-content: space-evenly;
                 font-size: 22px;
@@ -114,53 +82,36 @@ footer {
             }
         }
     }  
-
 }
 
 @media only screen and (min-width: 992px) {
 
-    
     footer {
+    @include flex;
     height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: $colorPrimario;
     color: white;
-
         .footer__contenido {
+            @include flex;
+            justify-content: space-between;
             font-size: 19px;
-            display: flex;
             flex-direction: row;
             width: 80%;
             height: 80%;
-            justify-content: space-between;
-            align-items: center;
-            
-        
             .footer__form {
                 width: 40%;
-            
                 .footer__input {
                     width: 100%;
                     margin-bottom: 20px;
                     border: none;
                 }
-
                 .footer__submit {
                     width: 100%;
                     border: none;
                     background-color: white;
                     color: rgb(109, 107, 107) ;
                 }
-
-                .footer__submit:hover {
-                    background-color: $colorHover;
-                    color: rgb(250, 250, 249);
-                    transition: 0.3s;
-                }
             }
-
             .footer__redes {
                 justify-content: space-evenly;
                 font-size: 22px;

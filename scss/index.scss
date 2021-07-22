@@ -1,3 +1,4 @@
+
 @media only screen and (max-width: 768px) {
 
     .seccion1 {
@@ -8,87 +9,63 @@
         background-repeat: no-repeat;
         background-size: cover;
         align-items: center;
-
         .seccion1__titulo {
             margin-bottom: -120px;
             margin-left: 50px;
             color: $colorPrimario;
             width: 40%;
-
             .seccion1__titulo1 {
                 font-size: 80px;
-                
             }
         }
     }
 
     .seccion2 {
+        @include flex;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin-top: 50px;
-
         .seccion2__contenido {
-            display: flex;
+            @include flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
             width: 90%;
             order: 0;
         }
-
         .seccion2__imagen {
             order: 2;
- 
             img {
                 width: 100%;
                 height: auto;
             }
         }
-
         .seccion2__texto {
             order: 1;
             width: 80%;
-            margin-top: 30px;
             margin-bottom: 50px;
         }
-
         .seccion2b__texto {
             order: 3;
             width: 80%;
             margin-top: 50px;
             margin-bottom: 50px;
         }
-
         .seccion2b__imagen {
             display: none;
-            
         }
     }  
     
     .seccion3 {
+        @include flex;
         width: 100%;
         height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-
         .seccion3__contenido {
             background-image: url(../multimedia/seccion3b.png) ;
             background-size: cover;
+            @include flex;
             height: 100%;
             width: 90%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
             .seccion3__texto {
-                display: flex;
+                @include flex;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
                 background-color: $colorFondo;
                 width: 80%;
                 height: 25%;
@@ -105,24 +82,17 @@
     }
 
     .seccion4 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
+        @include flex;
         .seccion4__contenido {
-            display: flex;
+            @include flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             width: 100%;
             color: $colorPrimario;
             margin-top: 80px;
             margin-bottom: 50px;
-            
             .seccion4__titulo {
                 font-size: 25px;
             }
-
             .seccion4__redes{
                 display: flex;
                 flex: row wrap;
@@ -141,24 +111,19 @@
     }
 
     .seccion5 {
-        display: flex;
+        @include flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         height: 90vh;
         background-color: $colorFondoseccion;
-        
 
         h3 {
             font-size: 25px;
             color: $colorLetra;
             margin-bottom: 60px;
         }
-
         .seccion5__form {
             display: flex;
             flex-direction: column;
-
             .seccion5input {
                 width: 300px;
                 border: solid 1px $colorBordes;
@@ -179,38 +144,16 @@
 
     .seccion6 {
         width: 100%;
-        
-
         .seccion6__galeria {
-            display: flex;
+            @include flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
             margin-bottom: 30px;
-            img {
-                margin-top: 30px;
-            }
+            img {margin-top: 30px;}
             
-            .galeria3 {
-                img {
-                    display:none;
-                }
-            }
-            .galeria4 {
-                img {
-                    display:none;
-                }
-            }
-            .galeria7 {
-                img {
-                    display:none;
-                }
-            }
-            .galeria8 {
-                img {
-                    display:none;
-                }
-            }
+            .galeria3 {img {display:none;}}
+            .galeria4 {img {display:none;}}
+            .galeria7 {img {display:none;}}
+            .galeria8 {img {display:none;}}
         }
     }
 }
@@ -228,25 +171,20 @@
         background-repeat: no-repeat;
         background-size: cover;
         align-items: center;
-
         .seccion1__titulo {
             margin-bottom: -100px;
             margin-left: 100px;
             color: $colorPrimario;
             width: 40%;
-
             .seccion1__titulo1 {
                 font-size: 90px;
-                
             }
         }
     }
 
     .seccion2 {
+        @include flex;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin-top: 50px;
 
         .seccion2__contenido {
@@ -264,7 +202,6 @@
 
             .seccion2__imagen {
                 grid-area: seccion2__imagen;
-                
                 img{
                     width: 100%;
                     height: auto;
@@ -273,25 +210,19 @@
             }
             .seccion2__texto {
                 grid-area: seccion2__texto;
-               
-
                 h2 {font-size: 40px;}
                 p { width: 90% }
             }
 
             .seccion2b__texto {
                 grid-area: seccion2b__texto;
-                
-
                 h2 {font-size: 40px;}
                 p { width: 90% }
                 
             }
 
             .seccion2b__imagen {
-                
                 grid-area: seccion2b__imagen;
-
                 img{
                     width: 100%;
                     height: auto;
@@ -303,31 +234,22 @@
 
     
     .seccion3 {
+        @include flex;
         width: 100%;
         height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-
         .seccion3__contenido {
             background-image: url(../multimedia/seccion3b.png) ;
             background-size: cover;
+            @include flex;
             height: 100%;
             width: 90%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
 
             .seccion3__texto {
-                display: flex;
+                @include flex;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
                 background-color: $colorFondo;
                 width: 60%;
                 height: 25%;
-
                 h2 {
                     font-size: 25px;
                 }
@@ -340,24 +262,17 @@
     }
 
     .seccion4 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
+        @include flex;
         .seccion4__contenido {
-            display: flex;
+            @include flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             width: 100%;
             color: $colorPrimario;
             margin-top: 80px;
             margin-bottom: 50px;
-            
             .seccion4__titulo {
                 font-size: 25px;
             }
-
             .seccion4__redes{
                 display: flex;
                 flex: row wrap;
@@ -376,24 +291,18 @@
     }
 
     .seccion5 {
-        display: flex;
+        @include flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         height: 90vh;
         background-color: $colorFondoseccion;
-        
-
         h3 {
             font-size: 25px;
             color: $colorLetra;
             margin-bottom: 60px;
         }
-
         .seccion5__form {
             display: flex;
             flex-direction: column;
-
             .seccion5input {
                 width: 350px;
                 border: solid 1px $colorBordes;
@@ -416,14 +325,10 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        
-
-
         .seccion6__galeria {
             display: grid;
             width: 100%;
             margin-bottom: 30px;
-            
             grid-template-columns: repeat(5,1fr);
             grid-template-rows: repeat(4, 1fr);
             grid-template-areas: 
@@ -431,17 +336,12 @@
             "foto1 foto1 foto7 foto7 foto8"
             "foto4 foto5 foto7 foto7 foto8"
             "foto4 foto6 foto7 foto7 foto9";
-            
             row-gap: 10px;
             column-gap: 10px;
             margin-top: 30px;
-            
-           
-            
             .galeria1 {
                 grid-area: foto1;
                 img{
-                    
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
@@ -450,7 +350,6 @@
             .galeria2 {
                 grid-area: foto2;
                 img{
-                    
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
@@ -459,7 +358,6 @@
             .galeria3 {
                 grid-area: foto3;
                 img{
-                    
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
@@ -468,18 +366,14 @@
             .galeria4 {
                 grid-area: foto4;
                 img{
-                   
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                     }
             }
             .galeria5 {
-                
                 grid-area: foto5;
-
                 img{
-                   
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
@@ -488,7 +382,6 @@
             .galeria6 {
                 grid-area: foto6;
                 img{
-                    
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
@@ -504,9 +397,7 @@
             }
             .galeria8 {
                 grid-area: foto8;
-               
                 img{
-                    
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
@@ -521,35 +412,11 @@
                 }
             }
         }    
-        
-        /*
-        .seccion6__galeria {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: repeat(3, 1fr);
-            grid-template-areas: 
-            "galeria1 galeria2"
-            "galeria5 galeria6"
-            "galeria7 galeria9";
-            align-items: center;
-            justify-items: center;
-            column-gap: 30px;
-            width: 80%;
-            margin-bottom: 30px;
-            
-            img { margin-top: 30px;}
-            .galeria1 { grid-area: galeria1;}
-            .galeria2 { grid-area: galeria2;}
-            .galeria5 { grid-area: galeria5;}
-            .galeria6 { grid-area: galeria6;}
-            .galeria7 { grid-area: galeria7; img { width: 300px;height: auto;}}
-            .galeria9 {grid-area: galeria9;}
-            .galeria3 {img {display:none;}}
-            .galeria4 {img {display:none;}}
-            .galeria8 {img { display:none;}}
-        }*/
     } 
 }
+
+// FIN MEDIA QUERY medium devices -------------------------------------------------------------------
+
 
 
 @media only screen and (min-width: 992px) {  
@@ -562,27 +429,20 @@
         background-repeat: no-repeat;
         background-size: cover;
         align-items: center;
-
         .seccion1__titulo {
             margin-bottom: -100px;
             margin-left: 120px;
             color: $colorPrimario;
-
             .seccion1__titulo1 {
                 font-size: 90px;
-                
             }
         }
     }
 
     .seccion2 {
+        @include flex;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin-top: 50px;
-        
-
         .seccion2__contenido {
             display: grid;
             grid-template-columns: 49% 49%;
@@ -593,22 +453,18 @@
             "seccion2b__texto seccion2b__imagen";
             column-gap: 2%;
             width: 80%;
-
             .seccion2__imagen {
                 grid-area: seccion2__imagen;
-                
                 img{
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
-                    }
+                }
             }
             .seccion2__texto {
                 grid-area: seccion2__texto;
                 margin: auto;
                 margin-left: 60px;
-                
-
                 p {
                     width: 70%;
                 }
@@ -618,15 +474,12 @@
                 grid-area: seccion2b__texto;
                 margin: auto;
                 margin-left: 60px;
-                
-
                 p {
                     width: 70%;
                 }
             }
 
             .seccion2b__imagen {
-                
                 grid-area: seccion2b__imagen;
                 img{
                     width: 100%;
@@ -638,34 +491,23 @@
     }    
 
     .seccion3 {
+        @include flex;
         width: 100%;
         height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       
-
         .seccion3__contenido {
+            @include flex;
             background-image: url(../multimedia/seccion3b.png) ;
             background-size: cover;
             height: 100%;
             width: 80%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
             .seccion3__texto {
-                display: flex;
+                @include flex;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
                 background-color: $colorFondo;
                 width: 40%;
                 height: 25%;
-
                 h2 {
                     font-size: 25px;
-                   
                 }
 
                 a {
@@ -676,11 +518,8 @@
     }
 
     .seccion4 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex;
         margin-bottom: -50px;
-
         .seccion4__contenido {
             display: flex;
             flex-direction: column;
@@ -688,12 +527,9 @@
             align-items: center;
             width: 50%;
             color: $colorPrimario;
-            
-            
             .seccion4__titulo {
                 font-size: 30px;
             }
-
             .seccion4__redes{
                 display: flex;
                 flex: row wrap;
@@ -711,12 +547,9 @@
         }   
     }
 
-
     .seccion5 {
-        display: flex;
+        @include flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         height: 80vh;
         background-color: $colorFondoseccion;
         margin-top: 100px;
@@ -728,7 +561,6 @@
         }
 
         .seccion5input {
-            
             width: 170px;
             border: solid 1px $colorBordes;
             background-color: white;
@@ -745,14 +577,10 @@
         }
     }
 
-
    
     .seccion6 {
-
         height: 130vh;
         margin-bottom: 30px;
-
-
         .seccion6__galeria {
             display: grid;
             grid-template-columns: repeat(5,1fr);
@@ -766,13 +594,9 @@
             row-gap: 10px;
             column-gap: 10px;
             margin-top: 30px;
-            
-
-
             .galeria1 {
                 grid-area: foto1;
                 img{
-                    
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
@@ -781,7 +605,6 @@
             .galeria2 {
                 grid-area: foto2;
                 img{
-                    
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
@@ -790,7 +613,6 @@
             .galeria3 {
                 grid-area: foto3;
                 img{
-                    
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
@@ -799,7 +621,6 @@
             .galeria4 {
                 grid-area: foto4;
                 img{
-                   
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
@@ -833,9 +654,7 @@
             }
             .galeria8 {
                 grid-area: foto8;
-               
                 img{
-                    
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
