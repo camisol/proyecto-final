@@ -1,3 +1,82 @@
+@media only screen and (max-width: 768px) {
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .contacto__contenido {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 80%;
+            margin-top: 70px;
+            margin-bottom: 80px;
+        
+            .contacto__form {
+                width: 100%;
+
+                p {margin-bottom: 50px;}
+
+                .formButton {
+                    width: 300px;
+                    border: solid 1px $colorBordes;
+                    background-color: white;
+                    color: rgb(109, 107, 107);
+                    margin-bottom: 10px;
+                }
+
+                .formButton:hover {
+                    background-color: $colorPrimario;
+                    color: white;
+                    transition: 0.3s;
+                }
+            }
+        
+            .contacto__imagen img {display: none }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .contacto__contenido {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 70%;
+            margin-top: 70px;
+            margin-bottom: 80px;
+        
+            .contacto__form {
+                width: 100%;
+
+                p {margin-bottom: 50px;}
+
+                .formButton {
+                    width: 300px;
+                    border: solid 1px $colorBordes;
+                    background-color: white;
+                    color: rgb(109, 107, 107);
+                    margin-bottom: 10px;
+                }
+
+                .formButton:hover {
+                    background-color: $colorPrimario;
+                    color: white;
+                    transition: 0.3s;
+                }
+            }
+        
+            .contacto__imagen img {display: none }
+        }
+    }
+}
+
+
 @media only screen and (min-width: 992px) {
 
     .contacto{
@@ -9,7 +88,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            width: 90%;
+            width: 80%;
             margin-top: 70px;
             margin-bottom: 80px;
         
@@ -36,7 +115,8 @@
             }
         
             .contacto__imagen img {
-                width: 500px;
+                display: inline;
+                height: 570px;
             }
         }
     }

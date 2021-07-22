@@ -1,3 +1,4 @@
+
 @media only screen and (min-width: 992px) {
 
     .llegar {
@@ -13,6 +14,10 @@
             justify-content: space-between;
             margin-top: 80px;
             margin-bottom: 80px;
+
+            .llegar__imagen {
+                img { height: 600px;}
+            }
             
             .llegar__texto {
                 width: 40%;
