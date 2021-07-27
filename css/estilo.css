@@ -205,9 +205,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    background-color: #c18a50;
-    color: white; }
+    height: 70vh; }
     footer .footer__contenido {
       display: flex;
       justify-content: center;
@@ -223,11 +221,6 @@ footer {
           width: 100%;
           margin-bottom: 20px;
           border: none; }
-        footer .footer__contenido .footer__form .footer__submit {
-          width: 100%;
-          border: none;
-          background-color: white;
-          color: #6d6b6b; }
       footer .footer__contenido .footer__redes {
         justify-content: space-evenly;
         font-size: 22px;

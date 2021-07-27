@@ -1,3 +1,4 @@
+@import "_colores.scss";
 footer {
     background-color: $colorPrimario;
     color: white;
@@ -87,10 +88,8 @@ footer {
 @media only screen and (min-width: 992px) {
 
     footer {
-    @include flex;
-    height: 70vh;
-    background-color: $colorPrimario;
-    color: white;
+        @include flex;
+        height: 70vh;
         .footer__contenido {
             @include flex;
             justify-content: space-between;
@@ -104,12 +103,6 @@ footer {
                     width: 100%;
                     margin-bottom: 20px;
                     border: none;
-                }
-                .footer__submit {
-                    width: 100%;
-                    border: none;
-                    background-color: white;
-                    color: rgb(109, 107, 107) ;
                 }
             }
             .footer__redes {
