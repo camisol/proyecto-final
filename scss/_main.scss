@@ -1,4 +1,4 @@
-@import "_colores.scss";
+@import "_variables.scss";
 
 @import "nav.scss";
 @import "footer.scss";
@@ -16,7 +16,7 @@
 body {
     background-color: $colorFondo;
     font-family: 'Jost', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     color: rgb(109, 107, 107);
 }
 
@@ -33,13 +33,14 @@ a {
 }
 
 h2 {
-    font-size: 45px;
+    font-size: 45px ;
     font-weight: bold;
+    color: $colorPrimario;
 }
 
 
 .botonIndex {
-    color: $colorPrimario;
+    color: $colorLetra;
     font-weight: bold;
     font-size: 22px;
     padding: 5px 10px 5px 10px;
@@ -62,11 +63,19 @@ h2 {
     h1 {
         background-color: $colorFondo;
         padding: 50px 60px 50px 60px;
-        font-size: 30px;
+        font-size: 35px;
         text-align: justify;
         align-items: center;
         justify-content: center;
+        font-family: 'Libre Baskerville', serif;
+       
+        color: $colorPrimario;
     }
+}
+
+.letra1 {
+    font-family: 'Libre Baskerville', serif;
+    
 }
 
 

@@ -1,7 +1,9 @@
+
+
 @media only screen and (max-width: 768px) {
 
     .nav {
-        @include size(100% , 65vh);
+        @include size(100% , 55vh);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -28,22 +30,34 @@
             }
         }
         .nav__items {
-            @include size (100%, fit-content);
+            @include size (100%, 165px);
             @include flex;
-            height: fit-content ;
             border-top: solid 1px $colorBordes;
+           
             .nav__lista {
+                @include size(100%, 100%);
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 justify-content: space-between;
-                align-items: flex-start;
-                @include size(fit-content, fit-content);
+                text-align: left;
                 font-size: 22px;
+                margin-top: 20px;
+                
+                li {
+                    width: 100%;
+                    height: 100%;
+                    margin-left: -30px;
+                    text-align: center;
+                }
+                li:hover {
+                    background-color: $colorPrimario;
+                    a {color:$colorFondo;}
+                }
             }
         }
     }
 }
-
 
 
 @media only screen and (min-width: 768px) {
@@ -81,7 +95,8 @@
             border-top: solid 1px $colorBordes;
             .nav__lista {
                 @include flex;
-                @include size (70%, 60px);
+                margin-top: 10px;
+                @include size (65%, 60px);
                 flex-direction: row;
                 justify-content: space-between;
                 font-size: 22px;
@@ -131,11 +146,21 @@
             border-top: solid 1px $colorBordes;
             .nav__lista {
                 @include flex;
+                margin-top: 10px;
                 @include size (50%, 50px);
                 flex-direction: row;
                 justify-content: space-between;
                 font-size: 22px;
+               
+                
             }
         }
     }
-}
+} 
+
+
+
+
+
+
+

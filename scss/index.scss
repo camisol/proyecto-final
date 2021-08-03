@@ -11,11 +11,11 @@
         align-items: center;
         .seccion1__titulo {
             margin-bottom: -120px;
-            margin-left: 50px;
+            margin-left: 60px;
             color: $colorPrimario;
             width: 40%;
             .seccion1__titulo1 {
-                font-size: 80px;
+                font-size: 60px;
             }
         }
     }
@@ -71,7 +71,7 @@
                 height: 25%;
 
                 h2 {
-                    font-size: 25px;
+                    font-size: 35px;
                 }
 
                 a {
@@ -118,6 +118,7 @@
 
         h3 {
             font-size: 25px;
+            font-weight: bold;
             color: $colorLetra;
             margin-bottom: 60px;
         }
@@ -149,7 +150,7 @@
             flex-direction: column;
             margin-bottom: 30px;
             img {margin-top: 30px;}
-            
+            .galeria1 {img {height:300px;}}
             .galeria3 {img {display:none;}}
             .galeria4 {img {display:none;}}
             .galeria7 {img {display:none;}}
@@ -177,7 +178,7 @@
             color: $colorPrimario;
             width: 40%;
             .seccion1__titulo1 {
-                font-size: 90px;
+                font-size: 75px;
             }
         }
     }
@@ -185,7 +186,7 @@
     .seccion2 {
         @include flex;
         width: 100%;
-        margin-top: 50px;
+        margin-top: 80px;
 
         .seccion2__contenido {
             display: grid;
@@ -210,6 +211,8 @@
             }
             .seccion2__texto {
                 grid-area: seccion2__texto;
+                margin-bottom: 4% ;
+                margin-left: 50px;
                 h2 {font-size: 40px;}
                 p { width: 90% }
             }
@@ -236,7 +239,7 @@
     .seccion3 {
         @include flex;
         width: 100%;
-        height: 100vh;
+        height: 90vh;
         .seccion3__contenido {
             background-image: url(../multimedia/seccion3b.png) ;
             background-size: cover;
@@ -251,7 +254,7 @@
                 width: 60%;
                 height: 25%;
                 h2 {
-                    font-size: 25px;
+                    font-size: 35px;
                 }
 
                 a {
@@ -271,7 +274,7 @@
             margin-top: 80px;
             margin-bottom: 50px;
             .seccion4__titulo {
-                font-size: 25px;
+                font-size: 30px;
             }
             .seccion4__redes{
                 display: flex;
@@ -297,6 +300,7 @@
         background-color: $colorFondoseccion;
         h3 {
             font-size: 25px;
+            font-weight: bold;
             color: $colorLetra;
             margin-bottom: 60px;
         }
@@ -434,7 +438,7 @@
             margin-left: 120px;
             color: $colorPrimario;
             .seccion1__titulo1 {
-                font-size: 90px;
+                font-size: 70px;
             }
         }
     }
@@ -463,17 +467,18 @@
             }
             .seccion2__texto {
                 grid-area: seccion2__texto;
-                margin: auto;
                 margin-left: 60px;
+               
                 p {
                     width: 70%;
+                    
                 }
             }
 
             .seccion2b__texto {
                 grid-area: seccion2b__texto;
-                margin: auto;
                 margin-left: 60px;
+                
                 p {
                     width: 70%;
                 }
@@ -507,7 +512,7 @@
                 width: 40%;
                 height: 25%;
                 h2 {
-                    font-size: 25px;
+                    font-size: 35px;
                 }
 
                 a {
@@ -555,25 +560,30 @@
         margin-top: 100px;
 
         h3 {
-            font-size: 30px;
+            font-size: 28px;
             color: $colorLetra;
             margin-bottom: 60px;
         }
 
-        .seccion5input {
-            width: 170px;
-            border: solid 1px $colorBordes;
-            background-color: white;
-            color: rgb(109, 107, 107);
-            margin-bottom: 10px;
-            height: 40px;
-            margin-right: 10px;
-        }
+        .seccion5__form {
+            @include flex;
+            flex-direction: row;
 
-        .formButton:hover {
-            background-color: $colorPrimario;
-            color: white;
-            transition: 0.3s;
+            .seccion5input {
+                width: 200px;
+                border: solid 1px $colorBordes;
+                background-color: white;
+                color: rgb(109, 107, 107);
+                margin-bottom: 10px;
+                height: 40px;
+                margin-right: 15px;
+            }
+
+            .formButton:hover {
+                background-color: $colorPrimario;
+                color: white;
+                transition: 0.3s;
+            }
         }
     }
 

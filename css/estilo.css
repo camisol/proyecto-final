@@ -1,7 +1,7 @@
 @media only screen and (max-width: 768px) {
   .nav {
     width: 100%;
-    height: 65vh;
+    height: 55vh;
     display: flex;
     flex-direction: column;
     align-items: center; }
@@ -26,20 +26,30 @@
         height: 100px; }
     .nav .nav__items {
       width: 100%;
-      height: fit-content;
+      height: 165px;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: fit-content;
       border-top: solid 1px #dadada; }
       .nav .nav__items .nav__lista {
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: space-between;
-        align-items: flex-start;
-        width: fit-content;
-        height: fit-content;
-        font-size: 22px; } }
+        text-align: left;
+        font-size: 22px;
+        margin-top: 20px; }
+        .nav .nav__items .nav__lista li {
+          width: 100%;
+          height: 100%;
+          margin-left: -30px;
+          text-align: center; }
+        .nav .nav__items .nav__lista li:hover {
+          background-color: #c18a50; }
+          .nav .nav__items .nav__lista li:hover a {
+            color: #fafaf9; } }
 
 @media only screen and (min-width: 768px) {
   .nav {
@@ -79,7 +89,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 70%;
+        margin-top: 10px;
+        width: 65%;
         height: 60px;
         flex-direction: row;
         justify-content: space-between;
@@ -122,6 +133,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 10px;
         width: 50%;
         height: 50px;
         flex-direction: row;
@@ -237,11 +249,11 @@ footer {
     align-items: center; }
     .seccion1 .seccion1__titulo {
       margin-bottom: -120px;
-      margin-left: 50px;
+      margin-left: 60px;
       color: #c18a50;
       width: 40%; }
       .seccion1 .seccion1__titulo .seccion1__titulo1 {
-        font-size: 80px; }
+        font-size: 60px; }
   .seccion2 {
     display: flex;
     justify-content: center;
@@ -294,7 +306,7 @@ footer {
         width: 80%;
         height: 25%; }
         .seccion3 .seccion3__contenido .seccion3__texto h2 {
-          font-size: 25px; }
+          font-size: 35px; }
         .seccion3 .seccion3__contenido .seccion3__texto a {
           font-size: 22px; }
   .seccion4 {
@@ -331,6 +343,7 @@ footer {
     background-color: #ebe9e9; }
     .seccion5 h3 {
       font-size: 25px;
+      font-weight: bold;
       color: #6d6b6b;
       margin-bottom: 60px; }
     .seccion5 .seccion5__form {
@@ -358,6 +371,8 @@ footer {
       margin-bottom: 30px; }
       .seccion6 .seccion6__galeria img {
         margin-top: 30px; }
+      .seccion6 .seccion6__galeria .galeria1 img {
+        height: 300px; }
       .seccion6 .seccion6__galeria .galeria3 img {
         display: none; }
       .seccion6 .seccion6__galeria .galeria4 img {
@@ -382,13 +397,13 @@ footer {
       color: #c18a50;
       width: 40%; }
       .seccion1 .seccion1__titulo .seccion1__titulo1 {
-        font-size: 90px; }
+        font-size: 75px; }
   .seccion2 {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 50px; }
+    margin-top: 80px; }
     .seccion2 .seccion2__contenido {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -405,7 +420,9 @@ footer {
           height: auto;
           object-fit: cover; }
       .seccion2 .seccion2__contenido .seccion2__texto {
-        grid-area: seccion2__texto; }
+        grid-area: seccion2__texto;
+        margin-bottom: 4%;
+        margin-left: 50px; }
         .seccion2 .seccion2__contenido .seccion2__texto h2 {
           font-size: 40px; }
         .seccion2 .seccion2__contenido .seccion2__texto p {
@@ -427,7 +444,7 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh; }
+    height: 90vh; }
     .seccion3 .seccion3__contenido {
       background-image: url(../multimedia/seccion3b.png);
       background-size: cover;
@@ -445,7 +462,7 @@ footer {
         width: 60%;
         height: 25%; }
         .seccion3 .seccion3__contenido .seccion3__texto h2 {
-          font-size: 25px; }
+          font-size: 35px; }
         .seccion3 .seccion3__contenido .seccion3__texto a {
           font-size: 22px; }
   .seccion4 {
@@ -462,7 +479,7 @@ footer {
       margin-top: 80px;
       margin-bottom: 50px; }
       .seccion4 .seccion4__contenido .seccion4__titulo {
-        font-size: 25px; }
+        font-size: 30px; }
       .seccion4 .seccion4__contenido .seccion4__redes {
         display: flex;
         flex: row wrap;
@@ -482,6 +499,7 @@ footer {
     background-color: #ebe9e9; }
     .seccion5 h3 {
       font-size: 25px;
+      font-weight: bold;
       color: #6d6b6b;
       margin-bottom: 60px; }
     .seccion5 .seccion5__form {
@@ -582,7 +600,7 @@ footer {
       margin-left: 120px;
       color: #c18a50; }
       .seccion1 .seccion1__titulo .seccion1__titulo1 {
-        font-size: 90px; }
+        font-size: 70px; }
   .seccion2 {
     display: flex;
     justify-content: center;
@@ -604,13 +622,11 @@ footer {
           object-fit: cover; }
       .seccion2 .seccion2__contenido .seccion2__texto {
         grid-area: seccion2__texto;
-        margin: auto;
         margin-left: 60px; }
         .seccion2 .seccion2__contenido .seccion2__texto p {
           width: 70%; }
       .seccion2 .seccion2__contenido .seccion2b__texto {
         grid-area: seccion2b__texto;
-        margin: auto;
         margin-left: 60px; }
         .seccion2 .seccion2__contenido .seccion2b__texto p {
           width: 70%; }
@@ -643,7 +659,7 @@ footer {
         width: 40%;
         height: 25%; }
         .seccion3 .seccion3__contenido .seccion3__texto h2 {
-          font-size: 25px; }
+          font-size: 35px; }
         .seccion3 .seccion3__contenido .seccion3__texto a {
           font-size: 22px; }
   .seccion4 {
@@ -679,21 +695,26 @@ footer {
     background-color: #ebe9e9;
     margin-top: 100px; }
     .seccion5 h3 {
-      font-size: 30px;
+      font-size: 28px;
       color: #6d6b6b;
       margin-bottom: 60px; }
-    .seccion5 .seccion5input {
-      width: 170px;
-      border: solid 1px #dadada;
-      background-color: white;
-      color: #6d6b6b;
-      margin-bottom: 10px;
-      height: 40px;
-      margin-right: 10px; }
-    .seccion5 .formButton:hover {
-      background-color: #c18a50;
-      color: white;
-      transition: 0.3s; }
+    .seccion5 .seccion5__form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row; }
+      .seccion5 .seccion5__form .seccion5input {
+        width: 200px;
+        border: solid 1px #dadada;
+        background-color: white;
+        color: #6d6b6b;
+        margin-bottom: 10px;
+        height: 40px;
+        margin-right: 15px; }
+      .seccion5 .seccion5__form .formButton:hover {
+        background-color: #c18a50;
+        color: white;
+        transition: 0.3s; }
   .seccion6 {
     height: 130vh;
     margin-bottom: 30px; }
@@ -1011,6 +1032,8 @@ footer {
       flex-direction: column;
       align-items: center;
       padding: 20px 50px 20px 50px; }
+      .menu__contenido .menu__delivery h2 {
+        color: #fafaf9; }
     .menu__contenido .menu__principales {
       width: 80%;
       text-align: center;
@@ -1047,6 +1070,8 @@ footer {
       flex-direction: column;
       align-items: center;
       padding: 20px 50px 20px 50px; }
+      .menu__contenido .menu__delivery h2 {
+        color: #fafaf9; }
     .menu__contenido .menu__principales {
       width: 80%;
       text-align: center;
@@ -1206,7 +1231,7 @@ footer {
 body {
   background-color: #fafaf9;
   font-family: 'Jost', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   color: #6d6b6b; }
 
 ul {
@@ -1220,10 +1245,11 @@ a {
 
 h2 {
   font-size: 45px;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #c18a50; }
 
 .botonIndex {
-  color: #c18a50;
+  color: #6d6b6b;
   font-weight: bold;
   font-size: 22px;
   padding: 5px 10px 5px 10px; }
@@ -1242,7 +1268,12 @@ h2 {
   .bannerTitulo h1 {
     background-color: #fafaf9;
     padding: 50px 60px 50px 60px;
-    font-size: 30px;
+    font-size: 35px;
     text-align: justify;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    font-family: 'Libre Baskerville', serif;
+    color: #c18a50; }
+
+.letra1 {
+  font-family: 'Libre Baskerville', serif; }
