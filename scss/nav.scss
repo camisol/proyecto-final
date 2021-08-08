@@ -3,7 +3,7 @@
 @media only screen and (max-width: 768px) {
 
     .nav {
-        @include size(100% , 55vh);
+        @include size(100% , 58vh);
         display: flex;
         flex-direction: column;
         align-items: center;

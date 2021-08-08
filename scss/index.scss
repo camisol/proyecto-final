@@ -4,18 +4,18 @@
     .seccion1 {
         display: flex;
         background-image: url(../multimedia/index13.png);
-        height: 100vh;
+        height: 70vh;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         align-items: center;
         .seccion1__titulo {
-            margin-bottom: -120px;
-            margin-left: 60px;
+            margin-bottom: -100px;
+            margin-left: 50px;
             color: $colorPrimario;
             width: 40%;
             .seccion1__titulo1 {
-                font-size: 60px;
+                font-size: 2.5em;
             }
         }
     }
@@ -167,7 +167,7 @@
     .seccion1 {
         display: flex;
         background-image: url(../multimedia/index13.png);
-        height: 100vh;
+        height: 70vh;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -211,7 +211,7 @@
             }
             .seccion2__texto {
                 grid-area: seccion2__texto;
-                margin-bottom: 4% ;
+                margin-bottom: 2% ;
                 margin-left: 50px;
                 h2 {font-size: 40px;}
                 p { width: 90% }
@@ -219,6 +219,8 @@
 
             .seccion2b__texto {
                 grid-area: seccion2b__texto;
+                margin-top: 4%;
+                margin-bottom: 4%;
                 h2 {font-size: 40px;}
                 p { width: 90% }
                 
@@ -239,7 +241,7 @@
     .seccion3 {
         @include flex;
         width: 100%;
-        height: 90vh;
+        height: 85vh;
         .seccion3__contenido {
             background-image: url(../multimedia/seccion3b.png) ;
             background-size: cover;
@@ -272,7 +274,7 @@
             width: 100%;
             color: $colorPrimario;
             margin-top: 80px;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
             .seccion4__titulo {
                 font-size: 30px;
             }
@@ -428,7 +430,7 @@
     .seccion1 {
         display: flex;
         background-image: url(../multimedia/index13.png);
-        height: 110vh;
+        height: 70vh;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -446,7 +448,7 @@
     .seccion2 {
         @include flex;
         width: 100%;
-        margin-top: 50px;
+        margin-top: 5%;
         .seccion2__contenido {
             display: grid;
             grid-template-columns: 49% 49%;
@@ -457,6 +459,8 @@
             "seccion2b__texto seccion2b__imagen";
             column-gap: 2%;
             width: 80%;
+            align-items: center;
+            
             .seccion2__imagen {
                 grid-area: seccion2__imagen;
                 img{
@@ -468,6 +472,7 @@
             .seccion2__texto {
                 grid-area: seccion2__texto;
                 margin-left: 60px;
+                margin-bottom: -20%;
                
                 p {
                     width: 70%;
@@ -478,6 +483,7 @@
             .seccion2b__texto {
                 grid-area: seccion2b__texto;
                 margin-left: 60px;
+                margin-top: -20%;
                 
                 p {
                     width: 70%;
@@ -498,7 +504,8 @@
     .seccion3 {
         @include flex;
         width: 100%;
-        height: 100vh;
+        height: 90vh;
+        margin-top: -5%;
         .seccion3__contenido {
             @include flex;
             background-image: url(../multimedia/seccion3b.png) ;
