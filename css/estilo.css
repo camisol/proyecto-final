@@ -796,8 +796,6 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 100%; }
-    .nosotros .bannerTitulo {
-      height: 100vh; }
     .nosotros .nosotros__contenido {
       display: flex;
       flex-direction: column;
@@ -875,8 +873,6 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 100%; }
-    .nosotros .bannerTitulo {
-      height: 100vh; }
     .nosotros .nosotros__contenido {
       display: flex;
       flex-direction: column;
@@ -954,8 +950,6 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 100%; }
-    .nosotros .bannerTitulo {
-      height: 60vh; }
     .nosotros .nosotros__contenido {
       display: flex;
       flex-direction: column;
